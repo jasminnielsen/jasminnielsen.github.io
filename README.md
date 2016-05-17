@@ -1,32 +1,63 @@
-# YAX-Coming-soon-Jekyll-Template
-Free Bootstrap HTML5 CSS3 Responsive Coming soon  Jekyll template
+# nandomoreira.me jekyll theme
 
-Designed by : Ilya B.  
-url: https://www.behance.net/gallery/18421675/Free-Bootstrap-Psd-Coming-Soon-Template  
+### [Preview](http://nandomoreira.me/nandomoreira-jekyll-theme/)
 
-Converted PSD to HTML/CSS by:  
-Morteza Aghili  
-bio: http://mortezaaghili.github.io/  
+## Setup
 
-Adpated to Jekyll by [yonojoy](https://github.com/yonojoy)
+### In the terminal run the commands
 
-## Usage
-Edit `index.md` to contain your message.
+```
+$ sudo npm i -g gulp bower browser-sync
+$ sudo gem install bundler
+$ bundle install
+$ npm install
+```
 
-Edit `_config.yml` and add the following params:
+## Using Rake tasks
 
-* `countdown` to contain the target date in GMT/UTC
-* `owner` to contain infos about the site owner.
+```
+$ rake post title="TITLE OF THE POST"
+$ rake page name="about.md"
+$ rake category title="Programing"
+$ rake tag title="Jekyll"
+```
 
-That's it.
+## Using Jekyll
 
-## Installation
+### Running the server:
 
-Requires [Jekyll](http://jekyllrb.com/) 3+. 
+```
+$ jekyll server
+```
 
-If you are creating a new Jekyll site using Skinny Bones following these steps:
+Access, [localhost:4000](http://localhost:4000/)
 
-1. Download and unzip.
-2. Run `bundle install` to install all dependencies 
-3. Update `_config.yml` and `index.md` as described above.
+## Using Gulp
 
+### Rum gulp
+
+```
+$ gulp
+```
+
+---
+
+## Deploy in Github pages in 2 steps
+
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
+
+---
+
+* [Jekyll](http://jekyllrb.com/);
+* [Jekyll Documentation](http://jekyllrb.com/docs/home/);
+* [Como definir URLs curtas no Jekyll](http://nandomoreira.me/urls-curtas-no-jekyll/);
+* [Adicionando Disqus ao seu projeto Jekyll](http://nandomoreira.me/adicionando-disqus-ao-seu-projeto-jekyll/);
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+Enjoy! :yum:
